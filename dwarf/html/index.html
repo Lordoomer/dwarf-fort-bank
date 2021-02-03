@@ -1,0 +1,49 @@
+<!DOCTYPE html>    
+<html>
+<head>
+	<link rel="shortcut icon" href="#"/>
+	<meta name=viewport content='width=device-width, initial-scale=1'>
+	<meta charset='UTF-8'/>
+    <link async='true' rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Tangerine'>
+	<link async='true' href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+	<link async='true' href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+	<link async='true' href='https://fonts.googleapis.com/css?family=Ewert' rel='stylesheet'>
+	<link async='true' href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
+	<link async='true' href='https://fonts.googleapis.com/css?family=Frijole' rel='stylesheet'>
+	<link async='true' href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	<link async='true' rel='stylesheet' type='text/css' href='dwarf/css/3dapp.css' />
+	<script type='text/javascript' src='fto/js/socket.io.js'></script>
+</head>
+<body>
+	<div id='MyToolBar'>
+		<input id='Test_Play1' class='buttonclass1' type='button' value='Dwarf Fortress Region Bank' />	
+		<input id='LogIn' class='buttonclass1' type='button' value='Log in' />
+	</div>	
+	<div id='LogInMenu'>
+	Log in</br>
+	Account Name:<input class='LogInButtons' class='buttonclass1' id='Account_Name' type='text' value='' /></br>
+	Password:<input class='LogInButtons' class='buttonclass1' id='Password' type='password' value='' /></br></br>
+	New Account	</br>
+	Account Name:<input class='LogInButtons' class='buttonclass1' id='New_Account_Name' type='text' value='' title='DO NOT FORGET YOUR  ACCOUNT NAME AND/OR PASSWORD!' /></br>
+	Password:<input class='LogInButtons'  class='buttonclass1'id='Password1' type='password' value='' title='DO NOT FORGET YOUR  ACCOUNT NAME AND/OR PASSWORD!' /></br>
+	Confirm password:<input class='LogInButtons' class='buttonclass1' id='Password2' type='password' value='' title='DO NOT FORGET YOUR  ACCOUNT NAME AND/OR PASSWORD!' />
+	</br></br><h3 id="RegisterAdvice" style="font-family:Flames; color:yellow;">Please do not forget your account informations!!!!!!</h1>
+		<input id='Continue' class='buttonclass1' type='button' value='Continue' />		
+		<input id='New_Game' class='buttonclass1' type='button' value='New Game' />
+	</div>
+		<div id='interfaceC'>
+		<div id='LibaryContainerB' class="FortBankDiv">
+		<p style="color:#DDCC66; font-size:20px; font-family:PlainGermanica; font-weight:bold">Please choose a dwarf fortress current folder and region folder compressed into a rar or zip file smaller than 150 MB.'</p>
+			<div id='ImagesLibraryB' >
+					<form id='myFormB' action='/FortBank1' method='post' enctype='multipart/form-data' onsubmit='return validation()'>
+					<div id='MyUploadbarFrameB'>
+						<label id='progresslabelB'> 0%</label><img id='MyUploadProgressBarB' src='images/loading.gif'/>
+					</div>
+					<input  class='buttonclass1' id='MyFileB' type='file' onchange='validate_fileuploadB(this.value);' name='file'/>
+				</form>
+			</div>
+		</div>
+		</div>
+			<script defer="true" async='true' type='text/javascript' src='dwarf/js/js3dapp.js'></script>
+</body>
+</html> 

@@ -1,0 +1,25 @@
+{
+  "name": "dwarf-fort-bank",
+  "version": "1.0.0",
+  "description": "Website for faciiltating succession forts for Dwarf Fortress",
+  "main": "dwarf/fto.js",
+  "scripts": {
+    "start": "node dwarf/fto.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lordoomer/dwarf-fort-bank.git"
+  },
+  "author": "Lordoomer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lordoomer/dwarf-fort-bank/issues"
+  },
+  "homepage": "https://github.com/Lordoomer/dwarf-fort-bank#readme",
+  "dependencies": {
+    "formidable": "^2.0.0-canary.20200504.1",
+    "socket.io": "^3.1.1",
+    "socket.io-client": "^3.1.1"
+  }
+}
